@@ -1,0 +1,322 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.xrlj</groupId>
+    <artifactId>xrlj-dependencies</artifactId>
+    <version>0.0.1</version>
+    <packaging>pom</packaging>
+    <name>xrlj-dependencies</name>
+    <description>常用依赖库。</description>
+
+    <properties>
+        <dubbo.version>2.5.3</dubbo.version>
+        <swagger.version>2.6.1</swagger.version>
+        <mysql.connector.version>5.1.21</mysql.connector.version>
+        <joda.time.version>2.9.7</joda.time.version>
+        <guava.version>23.0</guava.version>
+        <kaptcha.version>0.0.9</kaptcha.version>
+        <mybatis.spring.boot.version>1.1.1</mybatis.spring.boot.version>
+        <apache.common.beanutils>1.9.3</apache.common.beanutils>
+        <apache.common.io.version>2.6</apache.common.io.version>
+        <apache.common.lang.version>2.6</apache.common.lang.version>
+        <apache.common.collections4.version>4.0</apache.common.collections4.version>
+        <log4jdbc.version>1.16</log4jdbc.version>
+        <lombok.version>1.16.18</lombok.version>
+        <jsoup.version>1.11.1</jsoup.version>
+        <cglib.version>3.2.4</cglib.version>
+        <asm-all.version>5.1</asm-all.version>
+        <okhtt.version>3.9.1</okhtt.version>
+        <alibaba.easyexcel.version>1.0.0-RELEASE</alibaba.easyexcel.version>
+        <alibaba.fastjson>1.2.39</alibaba.fastjson>
+        <alibaba.druid.version>1.0.25</alibaba.druid.version>
+        <zxing.version>3.3.0</zxing.version>
+        <jodd.version>3.6.6</jodd.version>
+        <imgscalr.version>4.2</imgscalr.version>
+        <metadata-extractor.version>2.9.1</metadata-extractor.version>
+        <fastdfs-client.java.version>1.27-RELEASE</fastdfs-client.java.version>
+        <javapoet.version>1.10.0</javapoet.version>
+        <modelmapper.version>2.3.0</modelmapper.version>
+        <googlejavaformat.version>1.5</googlejavaformat.version>
+        <barcode4j-light.version>2.0</barcode4j-light.version>
+        <ymu-framework.version>2.0</ymu-framework.version>
+
+        <java.version>1.8</java.version>
+
+        <nexus.url>http://119.145.41.171:8085</nexus.url>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--////////// Apache common start /////////// -->
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${apache.common.beanutils}</version><!--$NO-MVN-MAN-VER$ -->
+            </dependency>
+
+            <!-- apache的java.lang包扩展库。JAVA基础的、通用的操作和处理。，里面有很多的工具类 -->
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${apache.common.lang.version}</version>
+            </dependency>
+
+            <!-- apache java集合框架的加强使用库 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${apache.common.collections4.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${apache.common.io.version}</version>
+            </dependency>
+
+            <!--///////// Apache common end /////////// -->
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version><!--$NO-MVN-MAN-VER$ -->
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${alibaba.druid.version}</version>
+            </dependency>
+
+            <!--日期，时间处理 -->
+            <!--http://www.joda.org/ -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
+            </dependency>
+
+            <!--https://github.com/google/guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!--图形验证码 -->
+            <dependency>
+                <groupId>com.github.axet</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${kaptcha.version}</version>
+            </dependency>
+
+            <!--excel处理库-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${alibaba.easyexcel.version}</version>
+            </dependency>
+
+            <!-- log4jdbc,打印sql语句 -->
+            <dependency>
+                <groupId>org.bgee.log4jdbc-log4j2</groupId>
+                <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+                <version>${log4jdbc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${alibaba.fastjson}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <!--HTML解析器-->
+            <dependency>
+                <!-- jsoup HTML parser library @ https://jsoup.org/ -->
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cglib</groupId>
+                <artifactId>cglib</artifactId>
+                <version>${cglib.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-all</artifactId>
+                <version>${asm-all.version}</version>
+            </dependency>
+
+            <!--///////////////////-->
+
+            <!--///// 分布式文件系统客户端start/////// -->
+            <dependency>
+                <groupId>org.csource</groupId>
+                <artifactId>fastdfs-client-java</artifactId>
+                <version>${fastdfs-client.java.version}</version>
+            </dependency>
+
+            <!--////////// jodd,java常用工具包，包含字符串处理，日期处理，等等一系列java常用工具。 分模块引入 ////////////////// -->
+            <!-- http://jodd.org/ -->
+            <!-- 一些工具类，包括Printf、JDateTime、StringUtil、Fast buffers等等 -->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-core</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+            <!-- BeanUtil以及类型检查转换工具。未使用 -->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-bean</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+            <!-- 更简单易用的e-mail收发。未使用 -->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-mail</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+            <!-- HTML/XML解析器，包含Jerry和CSSelly，让你像jQuery一样筛选HTML节点 -->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-lagarto</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+            <!-- 更强大的Java Properties替代 -->
+            <dependency>
+                <groupId>org.jodd</groupId>
+                <artifactId>jodd-props</artifactId>
+                <version>${jodd.version}</version>
+            </dependency>
+
+            <!--////////// jodd,java常用工具包，包含字符串处理，日期处理，等等一系列java常用工具。 分模块引入 end ///////// -->
+
+            <!--////////// google start //////////-->
+
+            <!-- 二维码，条形码zxing start -->
+            <!-- https://mvnrepository.com/artifact/com.google.zxing/core -->
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>core</artifactId>
+                <version>${zxing.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.zxing</groupId>
+                <artifactId>javase</artifactId>
+                <version>${zxing.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.google.auto.service/auto-service -->
+            <dependency>
+                <groupId>com.google.auto.service</groupId>
+                <artifactId>auto-service</artifactId>
+                <version>1.0-rc4</version>
+            </dependency>
+
+            <!--google 格式化java代为为google java style风格-->
+            <dependency>
+                <groupId>com.google.googlejavaformat</groupId>
+                <artifactId>google-java-format</artifactId>
+                <version>${googlejavaformat.version}</version>
+            </dependency>
+
+
+            <!--///////// google end //////////-->
+
+            <!-- https://mvnrepository.com/artifact/net.sf.barcode4j/barcode4j-light -->
+            <dependency>
+                <groupId>net.sf.barcode4j</groupId>
+                <artifactId>barcode4j-light</artifactId>
+                <version>${barcode4j-light.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itextpdf</groupId>
+                <artifactId>itext-asian</artifactId>
+                <version>5.2.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.itextpdf</groupId>
+                <artifactId>itextpdf</artifactId>
+                <version>5.5.9</version>
+            </dependency>
+            <dependency>
+                <groupId> com.itextpdf.tool</groupId>
+                <artifactId>xmlworker</artifactId>
+                <version>5.5.11</version>
+            </dependency>
+
+
+            <!--////////////// 图片处理 start //////////////// -->
+            <dependency>
+                <groupId>org.imgscalr</groupId>
+                <artifactId>imgscalr-lib</artifactId>
+                <version>${imgscalr.version}</version>
+            </dependency>
+            <!-- 图片元数据解析器 -->
+            <dependency>
+                <groupId>com.drewnoakes</groupId>
+                <artifactId>metadata-extractor</artifactId>
+                <version>${metadata-extractor.version}</version>
+            </dependency>
+            <!--////////////// 图片处理 end //////////////// -->
+
+            <!--优雅生成代码-->
+            <!--https://github.com/square/javapoet-->
+            <dependency>
+                <groupId>com.squareup</groupId>
+                <artifactId>javapoet</artifactId>
+                <version>${javapoet.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhtt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.modelmapper</groupId>
+                <artifactId>modelmapper</artifactId>
+                <version>${modelmapper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!--mavne 发布-->
+    <distributionManagement>
+        <snapshotRepository>
+            <!--这里id要和maven的setting.xml中配置的一致-->
+            <id>snapshots</id>
+            <name>maven-snapshots</name>
+            <url>${nexus.url}/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>repository</id>
+            <name>ymu-hosted</name>
+            <url>${nexus.url}/repository/ymu-hosted/</url>
+        </repository>
+    </distributionManagement>
+
+</project>
