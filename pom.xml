@@ -20,6 +20,7 @@
         <apache.common.io.version>2.6</apache.common.io.version>
         <apache.common.lang.version>2.6</apache.common.lang.version>
         <apache.common.collections4.version>4.0</apache.common.collections4.version>
+        <commons-codec.version>1.11</commons-codec.version>
         <log4jdbc.version>1.16</log4jdbc.version>
         <lombok.version>1.16.18</lombok.version>
         <jsoup.version>1.11.1</jsoup.version>
