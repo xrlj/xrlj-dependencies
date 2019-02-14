@@ -38,7 +38,6 @@
         <modelmapper.version>2.3.0</modelmapper.version>
         <googlejavaformat.version>1.5</googlejavaformat.version>
         <barcode4j-light.version>2.0</barcode4j-light.version>
-        <ymu-framework.version>2.0</ymu-framework.version>
 
         <java.version>1.8</java.version>
 
