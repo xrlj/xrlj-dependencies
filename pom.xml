@@ -307,7 +307,7 @@
             <dependency>
                 <groupId>com.hotels.beans</groupId>
                 <artifactId>bean-utils-library</artifactId>
-                <version>1.2.6</version>
+                <version>1.2.7</version>
             </dependency>
 
             <dependency>
