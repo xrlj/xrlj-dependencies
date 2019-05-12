@@ -41,6 +41,8 @@
         <googlejavaformat.version>1.5</googlejavaformat.version>
         <barcode4j-light.version>2.0</barcode4j-light.version>
         <jooq.version>3.11.10</jooq.version>
+        <shiro-spring.version>1.4.0</shiro-spring.version>
+        <shiro-redis.version>3.2.3</shiro-redis.version>
 
         <java.version>1.8</java.version>
 
@@ -332,6 +334,19 @@
                 <artifactId>jooq-codegen</artifactId>
                 <version>${jooq.version}</version>
             </dependency>
+            <!--///////////////// shiro  start ///////////////////// -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-spring</artifactId>
+                <version>${shiro-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.crazycake</groupId>
+                <artifactId>shiro-redis</artifactId>
+                <version>${shiro-redis.version}</version>
+            </dependency>
+            <!--///////////////// shiro  end ///////////////////// -->
+
         </dependencies>
     </dependencyManagement>
 
