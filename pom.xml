@@ -44,6 +44,7 @@
         <shiro-spring.version>1.4.0</shiro-spring.version>
         <shiro-redis.version>3.2.3</shiro-redis.version>
         <jwt.version>3.8.0</jwt.version>
+        <jetcache-starter-redis.version>2.5.11</jetcache-starter-redis.version>
 
         <java.version>1.8</java.version>
 
@@ -352,6 +353,21 @@
                 <artifactId>java-jwt</artifactId>
                 <version>${jwt.version}</version>
             </dependency>
+
+            <!-- https://github.com/alibaba/jetcache-->
+            <dependency>
+                <groupId>com.alicp.jetcache</groupId>
+                <artifactId>jetcache-starter-redis</artifactId>
+                <version>${jetcache-starter-redis.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/com.alibaba/easyexcel -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>1.1.1</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
