@@ -46,6 +46,9 @@
         <jwt.version>3.8.0</jwt.version>
         <jetcache-starter-redis.version>2.5.11</jetcache-starter-redis.version>
 
+        <mybatis.version>3.5.2</mybatis.version>
+        <mybatis-spring.version>2.0.2</mybatis-spring.version>
+
         <nexus.url>http://120.79.2.30:8081</nexus.url>
 
         <java.version>11</java.version>
@@ -359,6 +362,17 @@
                 <groupId>com.alicp.jetcache</groupId>
                 <artifactId>jetcache-starter-redis</artifactId>
                 <version>${jetcache-starter-redis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis-spring.version}</version>
             </dependency>
 
         </dependencies>
