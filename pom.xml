@@ -49,7 +49,7 @@
         <mybatis.version>3.5.2</mybatis.version>
         <mybatis-spring.version>2.0.2</mybatis-spring.version>
 
-        <nexus.url>http://120.79.2.30:8081</nexus.url>
+        <nexus.url>http://nexus-server:8081</nexus.url>
 
         <java.version>11</java.version>
         <!--防止maven改动IDE的language level -->
@@ -463,8 +463,8 @@
         </snapshotRepository>
         <repository>
             <id>repository</id>
-            <name>ymu-hosted</name>
-            <url>${nexus.url}/repository/ymu-hosted/</url>
+            <name>maven-releases</name>
+            <url>${nexus.url}/repository/maven-snapshots/</url>
         </repository>
     </distributionManagement>
 
