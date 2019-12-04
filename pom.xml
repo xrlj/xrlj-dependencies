@@ -40,7 +40,7 @@
         <modelmapper.version>2.3.0</modelmapper.version>
         <googlejavaformat.version>1.5</googlejavaformat.version>
         <barcode4j-light.version>2.0</barcode4j-light.version>
-        <jooq.version>3.11.10</jooq.version>
+        <jooq.version>3.11.11</jooq.version>
         <shiro-spring.version>1.4.0</shiro-spring.version>
         <shiro-redis.version>3.2.3</shiro-redis.version>
         <jwt.version>3.8.0</jwt.version>
