@@ -464,7 +464,7 @@
         <repository>
             <id>repository</id>
             <name>maven-releases</name>
-            <url>${nexus.url}/repository/maven-snapshots/</url>
+            <url>${nexus.url}/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
 
