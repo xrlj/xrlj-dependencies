@@ -16,7 +16,7 @@
         <guava.version>23.0</guava.version>
         <kaptcha.version>0.0.9</kaptcha.version>
         <mybatis.spring.boot.version>1.1.1</mybatis.spring.boot.version>
-        <apache.common.beanutils>1.9.3</apache.common.beanutils>
+        <apache.common.beanutils>1.9.4</apache.common.beanutils>
         <apache.common.io.version>2.6</apache.common.io.version>
         <apache.common.lang.version>2.6</apache.common.lang.version>
         <apache.common.lang3.version>3.7</apache.common.lang3.version>
