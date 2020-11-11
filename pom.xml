@@ -49,6 +49,7 @@
 
         <mybatis.version>3.5.2</mybatis.version>
         <mybatis-spring.version>2.0.2</mybatis-spring.version>
+        <mybatis-pagehelper.version>5.2.0</mybatis-pagehelper.version>
 
         <nexus.url>http://nexus-server:8081</nexus.url>
 
@@ -388,6 +389,11 @@
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis-spring</artifactId>
                 <version>${mybatis-spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${mybatis-pagehelper.version}</version>
             </dependency>
             <!--pagehelper-->
             <dependency>
