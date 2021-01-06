@@ -51,13 +51,47 @@
         <mybatis-spring.version>2.0.2</mybatis-spring.version>
         <mybatis-pagehelper.version>5.2.0</mybatis-pagehelper.version>
 
-        <nexus.url>http://nexus-server:8081</nexus.url>
-
         <java.version>11</java.version>
         <!--防止maven改动IDE的language level -->
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <!-- 默认启动环境 -->
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <profileActive>dev</profileActive>
+                <nexus.url>http://172.31.31.31:8081</nexus.url>
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <profileActive>test</profileActive>
+                <nexus.url>http://172.31.31.31:8081</nexus.url>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <profileActive>prod</profileActive>
+                <nexus.url>http://8.210.22.230:8081</nexus.url>
+            </properties>
+        </profile>
+        <!--其它临时环境-->
+        <profile>
+            <id>local</id>
+            <properties>
+                <profileActive>local</profileActive>
+                <nexus.url>http://192.168.0.3:8081</nexus.url>
+            </properties>
+        </profile>
+    </profiles>
 
     <dependencyManagement>
         <dependencies>
