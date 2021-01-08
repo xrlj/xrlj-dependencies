@@ -80,7 +80,7 @@
             <id>prod</id>
             <properties>
                 <profileActive>prod</profileActive>
-                <nexus.url>http://8.210.22.230:8081</nexus.url>
+                <nexus.url>http://8.129.38.64:15671</nexus.url>
             </properties>
         </profile>
         <!--其它临时环境-->
