@@ -24,7 +24,7 @@
         <commons-codec.version>1.11</commons-codec.version>
         <log4jdbc.version>1.16</log4jdbc.version>
         <lombok.version>1.16.18</lombok.version>
-        <jsoup.version>1.11.1</jsoup.version>
+        <jsoup.version>1.14.2</jsoup.version>
         <cglib.version>3.2.4</cglib.version>
         <asm-all.version>5.1</asm-all.version>
         <okhtt.version>3.9.1</okhtt.version>
