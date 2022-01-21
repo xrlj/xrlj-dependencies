@@ -68,7 +68,7 @@
             </activation>
             <properties>
                 <profileActive>dev</profileActive>
-                <nexus.url>http://172.31.31.31:8081</nexus.url>
+                <nexus.url>http://192.168.0.3:8081</nexus.url>
             </properties>
         </profile>
         <profile>
@@ -178,6 +178,13 @@
                 <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
                 <version>${log4jdbc.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.googlecode.log4jdbc/log4jdbc -->
+            <!--<dependency>
+                <groupId>com.googlecode.log4jdbc</groupId>
+                <artifactId>log4jdbc</artifactId>
+                <version>1.2</version>
+            </dependency>-->
+
 
             <dependency>
                 <groupId>com.alibaba</groupId>
