@@ -29,7 +29,7 @@
         <asm-all.version>5.1</asm-all.version>
         <okhtt.version>3.9.1</okhtt.version>
         <alibaba.easyexcel.version>1.1.1</alibaba.easyexcel.version>
-        <alibaba.fastjson>1.2.55</alibaba.fastjson>
+        <alibaba.fastjson>1.2.83</alibaba.fastjson>
         <alibaba.druid.version>1.0.25</alibaba.druid.version>
         <zxing.version>3.3.0</zxing.version>
         <jodd.version>3.6.6</jodd.version>
